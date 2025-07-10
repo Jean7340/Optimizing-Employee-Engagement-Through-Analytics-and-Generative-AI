@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cb85dc8f84b717923e19ed7c887b5de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8cb85dc8f84b717923e19ed7c887b5de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8cb85dc8f84b717923e19ed7c887b5de = L.map(
+                "map_8cb85dc8f84b717923e19ed7c887b5de",
+                {
+                    center: [26.333826086956527, -12.579208695652174],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ea24cd42b522b2ce596111024c4e6a8e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ea24cd42b522b2ce596111024c4e6a8e.addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+            var circle_marker_53cd6a4d2cc20cbcac1e9fcfbfb2721d = L.circleMarker(
+                [50.1109, 8.6821],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_7ac01766dfa09e2c1e3468741b3e38ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6caacf802b6e5134f0afc6a072a1e6ce = $(`<div id="html_6caacf802b6e5134f0afc6a072a1e6ce" style="width: 100.0%; height: 100.0%;">Frankfurt Local: 306 enrollments</div>`)[0];
+                popup_7ac01766dfa09e2c1e3468741b3e38ea.setContent(html_6caacf802b6e5134f0afc6a072a1e6ce);
+            
+        
+
+        circle_marker_53cd6a4d2cc20cbcac1e9fcfbfb2721d.bindPopup(popup_7ac01766dfa09e2c1e3468741b3e38ea)
+        ;
+
+        
+    
+    
+            var circle_marker_26f12b9647e317b9a953c27915721858 = L.circleMarker(
+                [43.651, -79.347],
+                {"bubblingMouseEvents": true, "color": "#78c679", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c679", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_ea457f0e650b80e86b3edb853cc820ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef36d93196ef3ba5506aa7326910505f = $(`<div id="html_ef36d93196ef3ba5506aa7326910505f" style="width: 100.0%; height: 100.0%;">Toronto Local: 468 enrollments</div>`)[0];
+                popup_ea457f0e650b80e86b3edb853cc820ab.setContent(html_ef36d93196ef3ba5506aa7326910505f);
+            
+        
+
+        circle_marker_26f12b9647e317b9a953c27915721858.bindPopup(popup_ea457f0e650b80e86b3edb853cc820ab)
+        ;
+
+        
+    
+    
+            var circle_marker_9ac21db0abcad76d07acd52abf43c0ba = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "#31a354", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_aba4369d6a373d24e05c09c20a2c325d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_691b5ab7bf367ff06defdedf6a97e58a = $(`<div id="html_691b5ab7bf367ff06defdedf6a97e58a" style="width: 100.0%; height: 100.0%;">Mumbai Local: 601 enrollments</div>`)[0];
+                popup_aba4369d6a373d24e05c09c20a2c325d.setContent(html_691b5ab7bf367ff06defdedf6a97e58a);
+            
+        
+
+        circle_marker_9ac21db0abcad76d07acd52abf43c0ba.bindPopup(popup_aba4369d6a373d24e05c09c20a2c325d)
+        ;
+
+        
+    
+    
+            var circle_marker_87e03dafc7da625146c864bb56f3b656 = L.circleMarker(
+                [51.9225, 4.4791],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_079081c94f92fafb952021abb1380b9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcabda4af2fe934987a0f01125b4ae23 = $(`<div id="html_dcabda4af2fe934987a0f01125b4ae23" style="width: 100.0%; height: 100.0%;">Rotterdam Local: 214 enrollments</div>`)[0];
+                popup_079081c94f92fafb952021abb1380b9e.setContent(html_dcabda4af2fe934987a0f01125b4ae23);
+            
+        
+
+        circle_marker_87e03dafc7da625146c864bb56f3b656.bindPopup(popup_079081c94f92fafb952021abb1380b9e)
+        ;
+
+        
+    
+    
+            var circle_marker_6725905edd4379c76f8e479750efa712 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_8e4ae02b7d3efa1b83a4985d01f94fb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e641ab29c9e2ce62a30c4e20854b3003 = $(`<div id="html_e641ab29c9e2ce62a30c4e20854b3003" style="width: 100.0%; height: 100.0%;">Los Angeles Local: 391 enrollments</div>`)[0];
+                popup_8e4ae02b7d3efa1b83a4985d01f94fb8.setContent(html_e641ab29c9e2ce62a30c4e20854b3003);
+            
+        
+
+        circle_marker_6725905edd4379c76f8e479750efa712.bindPopup(popup_8e4ae02b7d3efa1b83a4985d01f94fb8)
+        ;
+
+        
+    
+    
+            var circle_marker_fd7e09cefbd34a61c253b5b8ff0e2a7b = L.circleMarker(
+                [14.5995, 120.9842],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_eb17c2d071536713c006bfdf289c9c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ebee217f821362712419fbc5d0e7de = $(`<div id="html_f4ebee217f821362712419fbc5d0e7de" style="width: 100.0%; height: 100.0%;">Manila Local: 354 enrollments</div>`)[0];
+                popup_eb17c2d071536713c006bfdf289c9c78.setContent(html_f4ebee217f821362712419fbc5d0e7de);
+            
+        
+
+        circle_marker_fd7e09cefbd34a61c253b5b8ff0e2a7b.bindPopup(popup_eb17c2d071536713c006bfdf289c9c78)
+        ;
+
+        
+    
+    
+            var circle_marker_535bc9317de557dd2bbdd7f7483696dc = L.circleMarker(
+                [52.2297, 21.0122],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_0c8836a133b9c1ce688335353b2f3977 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_365c490dd652a059be9b287988fc99e9 = $(`<div id="html_365c490dd652a059be9b287988fc99e9" style="width: 100.0%; height: 100.0%;">Warsaw Local: 368 enrollments</div>`)[0];
+                popup_0c8836a133b9c1ce688335353b2f3977.setContent(html_365c490dd652a059be9b287988fc99e9);
+            
+        
+
+        circle_marker_535bc9317de557dd2bbdd7f7483696dc.bindPopup(popup_0c8836a133b9c1ce688335353b2f3977)
+        ;
+
+        
+    
+    
+            var circle_marker_e9f8a39729c29248d9399182f0bffb62 = L.circleMarker(
+                [3.139, 101.6869],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_501109101b54be4f8ba9e6020cc4a65a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d29e2c4f8834617d2ab3eff0bef9997 = $(`<div id="html_7d29e2c4f8834617d2ab3eff0bef9997" style="width: 100.0%; height: 100.0%;">Kuala Lumpur Local: 406 enrollments</div>`)[0];
+                popup_501109101b54be4f8ba9e6020cc4a65a.setContent(html_7d29e2c4f8834617d2ab3eff0bef9997);
+            
+        
+
+        circle_marker_e9f8a39729c29248d9399182f0bffb62.bindPopup(popup_501109101b54be4f8ba9e6020cc4a65a)
+        ;
+
+        
+    
+    
+            var circle_marker_600592737e1c983ad38584973f41563b = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "#31a354", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_0fc43d9fffb5b587dfec5af738da1113 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e5093c16f827d6fceb71f11515e7957 = $(`<div id="html_0e5093c16f827d6fceb71f11515e7957" style="width: 100.0%; height: 100.0%;">San Francisco Local: 643 enrollments</div>`)[0];
+                popup_0fc43d9fffb5b587dfec5af738da1113.setContent(html_0e5093c16f827d6fceb71f11515e7957);
+            
+        
+
+        circle_marker_600592737e1c983ad38584973f41563b.bindPopup(popup_0fc43d9fffb5b587dfec5af738da1113)
+        ;
+
+        
+    
+    
+            var circle_marker_d55a2c8a16f592b269d5a0b7920ce481 = L.circleMarker(
+                [4.711, -74.0721],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_7d286ce54f9227832672a64ccdf648a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f08bb61fdfe215a9e2ea97ce7824992 = $(`<div id="html_6f08bb61fdfe215a9e2ea97ce7824992" style="width: 100.0%; height: 100.0%;">Bogota Local: 409 enrollments</div>`)[0];
+                popup_7d286ce54f9227832672a64ccdf648a1.setContent(html_6f08bb61fdfe215a9e2ea97ce7824992);
+            
+        
+
+        circle_marker_d55a2c8a16f592b269d5a0b7920ce481.bindPopup(popup_7d286ce54f9227832672a64ccdf648a1)
+        ;
+
+        
+    
+    
+            var circle_marker_9c890f9c19f6c89783f13bf69edb3f38 = L.circleMarker(
+                [51.5074, -0.1278],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_63c74a189747686459620a8bf4dfa7d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79a0d16973164b39cad58c7048340d44 = $(`<div id="html_79a0d16973164b39cad58c7048340d44" style="width: 100.0%; height: 100.0%;">London Local: 359 enrollments</div>`)[0];
+                popup_63c74a189747686459620a8bf4dfa7d8.setContent(html_79a0d16973164b39cad58c7048340d44);
+            
+        
+
+        circle_marker_9c890f9c19f6c89783f13bf69edb3f38.bindPopup(popup_63c74a189747686459620a8bf4dfa7d8)
+        ;
+
+        
+    
+    
+            var circle_marker_90ddd947c7af1f6b35d1b303b3637f2b = L.circleMarker(
+                [-23.5505, -46.6333],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_7bf12946986f9a732a10254fcc848f56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8176a1e0a52cd5d9b5c3dd379d35a34 = $(`<div id="html_a8176a1e0a52cd5d9b5c3dd379d35a34" style="width: 100.0%; height: 100.0%;">Sao Paulo Local: 319 enrollments</div>`)[0];
+                popup_7bf12946986f9a732a10254fcc848f56.setContent(html_a8176a1e0a52cd5d9b5c3dd379d35a34);
+            
+        
+
+        circle_marker_90ddd947c7af1f6b35d1b303b3637f2b.bindPopup(popup_7bf12946986f9a732a10254fcc848f56)
+        ;
+
+        
+    
+    
+            var circle_marker_b9e8b263a3093896cbbfa67d4f853906 = L.circleMarker(
+                [35.6895, 139.6917],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_3567f8032e1d388121a3b82ed8072f84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f2bf0fc6c8ab861c5cc69617d5c4325 = $(`<div id="html_9f2bf0fc6c8ab861c5cc69617d5c4325" style="width: 100.0%; height: 100.0%;">Tokyo Local: 400 enrollments</div>`)[0];
+                popup_3567f8032e1d388121a3b82ed8072f84.setContent(html_9f2bf0fc6c8ab861c5cc69617d5c4325);
+            
+        
+
+        circle_marker_b9e8b263a3093896cbbfa67d4f853906.bindPopup(popup_3567f8032e1d388121a3b82ed8072f84)
+        ;
+
+        
+    
+    
+            var circle_marker_9a65973e96dc7a01488a300fa65e50e3 = L.circleMarker(
+                [6.2442, -75.5812],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_07b1331119e3f30a7701b4a8d6f0db93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaa2348d314322291830ad3e0645dad4 = $(`<div id="html_eaa2348d314322291830ad3e0645dad4" style="width: 100.0%; height: 100.0%;">Medellin Local: 435 enrollments</div>`)[0];
+                popup_07b1331119e3f30a7701b4a8d6f0db93.setContent(html_eaa2348d314322291830ad3e0645dad4);
+            
+        
+
+        circle_marker_9a65973e96dc7a01488a300fa65e50e3.bindPopup(popup_07b1331119e3f30a7701b4a8d6f0db93)
+        ;
+
+        
+    
+    
+            var circle_marker_45152078bf20f8d307582b30e846bd99 = L.circleMarker(
+                [1.3521, 103.8198],
+                {"bubblingMouseEvents": true, "color": "#78c679", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c679", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_dac45a55f76acf68c6278838aeb641e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7afa88a751460567d402618390eeaad1 = $(`<div id="html_7afa88a751460567d402618390eeaad1" style="width: 100.0%; height: 100.0%;">Singapore Local: 507 enrollments</div>`)[0];
+                popup_dac45a55f76acf68c6278838aeb641e9.setContent(html_7afa88a751460567d402618390eeaad1);
+            
+        
+
+        circle_marker_45152078bf20f8d307582b30e846bd99.bindPopup(popup_dac45a55f76acf68c6278838aeb641e9)
+        ;
+
+        
+    
+    
+            var circle_marker_60c17865a25687caa5852b462eb22b38 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_848fd9f2f793d2ca70f8ba388b236f65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b94820bc8bc2a8f558db5754314639be = $(`<div id="html_b94820bc8bc2a8f558db5754314639be" style="width: 100.0%; height: 100.0%;">Barcelona Local: 363 enrollments</div>`)[0];
+                popup_848fd9f2f793d2ca70f8ba388b236f65.setContent(html_b94820bc8bc2a8f558db5754314639be);
+            
+        
+
+        circle_marker_60c17865a25687caa5852b462eb22b38.bindPopup(popup_848fd9f2f793d2ca70f8ba388b236f65)
+        ;
+
+        
+    
+    
+            var circle_marker_12a0461b5c4d6ea9c7cd35d51d3d707d = L.circleMarker(
+                [45.5017, -73.5673],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_8777610675f2c760d498d0ae43f5dae3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea42aeaee05b4b6d9096245941c30c3 = $(`<div id="html_7ea42aeaee05b4b6d9096245941c30c3" style="width: 100.0%; height: 100.0%;">Montreal Local: 349 enrollments</div>`)[0];
+                popup_8777610675f2c760d498d0ae43f5dae3.setContent(html_7ea42aeaee05b4b6d9096245941c30c3);
+            
+        
+
+        circle_marker_12a0461b5c4d6ea9c7cd35d51d3d707d.bindPopup(popup_8777610675f2c760d498d0ae43f5dae3)
+        ;
+
+        
+    
+    
+            var circle_marker_f563cad9ed6438d41b8cf67082a106d9 = L.circleMarker(
+                [39.7392, -104.9903],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_61322bddf01ed6602fea88bf149e80a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_845cdabebd61e8102d35aba662db6717 = $(`<div id="html_845cdabebd61e8102d35aba662db6717" style="width: 100.0%; height: 100.0%;">Denver Local: 420 enrollments</div>`)[0];
+                popup_61322bddf01ed6602fea88bf149e80a6.setContent(html_845cdabebd61e8102d35aba662db6717);
+            
+        
+
+        circle_marker_f563cad9ed6438d41b8cf67082a106d9.bindPopup(popup_61322bddf01ed6602fea88bf149e80a6)
+        ;
+
+        
+    
+    
+            var circle_marker_8f675d4b543d05705dd3d701b8d1126a = L.circleMarker(
+                [-12.0464, -77.0428],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_ac89184c44d816bef4bd00865937e603 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b465d5b99b8a1b23388db0b91d5ff652 = $(`<div id="html_b465d5b99b8a1b23388db0b91d5ff652" style="width: 100.0%; height: 100.0%;">Lima Local: 400 enrollments</div>`)[0];
+                popup_ac89184c44d816bef4bd00865937e603.setContent(html_b465d5b99b8a1b23388db0b91d5ff652);
+            
+        
+
+        circle_marker_8f675d4b543d05705dd3d701b8d1126a.bindPopup(popup_ac89184c44d816bef4bd00865937e603)
+        ;
+
+        
+    
+    
+            var circle_marker_b62b978b9986f031105df9f0b93b2fff = L.circleMarker(
+                [-6.2088, 106.8456],
+                {"bubblingMouseEvents": true, "color": "#78c679", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c679", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_4ce2fffad407da0279e2f4725e30c652 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf94d3c8d819fd8191e7660537203f56 = $(`<div id="html_bf94d3c8d819fd8191e7660537203f56" style="width: 100.0%; height: 100.0%;">Jakarta Local: 517 enrollments</div>`)[0];
+                popup_4ce2fffad407da0279e2f4725e30c652.setContent(html_bf94d3c8d819fd8191e7660537203f56);
+            
+        
+
+        circle_marker_b62b978b9986f031105df9f0b93b2fff.bindPopup(popup_4ce2fffad407da0279e2f4725e30c652)
+        ;
+
+        
+    
+    
+            var circle_marker_e8f05b69631a6ae6242b25a5f3ff182a = L.circleMarker(
+                [37.5665, 126.978],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_468c4c4c2e9f4705a96f5411a0d9fe17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18ac35d96ac2b2868b9c7c013ccb6c8c = $(`<div id="html_18ac35d96ac2b2868b9c7c013ccb6c8c" style="width: 100.0%; height: 100.0%;">Seoul Local: 440 enrollments</div>`)[0];
+                popup_468c4c4c2e9f4705a96f5411a0d9fe17.setContent(html_18ac35d96ac2b2868b9c7c013ccb6c8c);
+            
+        
+
+        circle_marker_e8f05b69631a6ae6242b25a5f3ff182a.bindPopup(popup_468c4c4c2e9f4705a96f5411a0d9fe17)
+        ;
+
+        
+    
+    
+            var circle_marker_43d0348c856582c5620f4fcf65bf7f4b = L.circleMarker(
+                [-34.6037, -58.3816],
+                {"bubblingMouseEvents": true, "color": "#31a354", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_c2519f2e03434d4af1b23ccf3e393f9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ba1930a8d4198847e567a15ec3928d1 = $(`<div id="html_5ba1930a8d4198847e567a15ec3928d1" style="width: 100.0%; height: 100.0%;">Buenos Aires Local: 603 enrollments</div>`)[0];
+                popup_c2519f2e03434d4af1b23ccf3e393f9e.setContent(html_5ba1930a8d4198847e567a15ec3928d1);
+            
+        
+
+        circle_marker_43d0348c856582c5620f4fcf65bf7f4b.bindPopup(popup_c2519f2e03434d4af1b23ccf3e393f9e)
+        ;
+
+        
+    
+    
+            var circle_marker_5b038eb2f7742539c94b0fe037dc9d3c = L.circleMarker(
+                [20.6597, -103.3496],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_5ac8363e3910cf7123a0bceb0f5b1934 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_087bb1f01f0d7ded865bb940b4680301 = $(`<div id="html_087bb1f01f0d7ded865bb940b4680301" style="width: 100.0%; height: 100.0%;">Guadalajara Local: 370 enrollments</div>`)[0];
+                popup_5ac8363e3910cf7123a0bceb0f5b1934.setContent(html_087bb1f01f0d7ded865bb940b4680301);
+            
+        
+
+        circle_marker_5b038eb2f7742539c94b0fe037dc9d3c.bindPopup(popup_5ac8363e3910cf7123a0bceb0f5b1934)
+        ;
+
+        
+    
+    
+            var circle_marker_3f0011b0412757a305b1c61f47290ab9 = L.circleMarker(
+                [22.5431, 114.0579],
+                {"bubblingMouseEvents": true, "color": "#006837", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006837", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_7cdca3acf64c26a5865c04c3c9152b07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbd511ddb1cacd59cc54e7de0eb784e4 = $(`<div id="html_fbd511ddb1cacd59cc54e7de0eb784e4" style="width: 100.0%; height: 100.0%;">Shenzhen Local: 688 enrollments</div>`)[0];
+                popup_7cdca3acf64c26a5865c04c3c9152b07.setContent(html_fbd511ddb1cacd59cc54e7de0eb784e4);
+            
+        
+
+        circle_marker_3f0011b0412757a305b1c61f47290ab9.bindPopup(popup_7cdca3acf64c26a5865c04c3c9152b07)
+        ;
+
+        
+    
+    
+            var circle_marker_3a695a16bae1d77fa11bf09df0006295 = L.circleMarker(
+                [22.3193, 114.1694],
+                {"bubblingMouseEvents": true, "color": "#31a354", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_9a307d964957695501d5ee0cf3e39f51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4696634c7865e294748a0cb8f8dd444 = $(`<div id="html_e4696634c7865e294748a0cb8f8dd444" style="width: 100.0%; height: 100.0%;">Hong Kong Local: 668 enrollments</div>`)[0];
+                popup_9a307d964957695501d5ee0cf3e39f51.setContent(html_e4696634c7865e294748a0cb8f8dd444);
+            
+        
+
+        circle_marker_3a695a16bae1d77fa11bf09df0006295.bindPopup(popup_9a307d964957695501d5ee0cf3e39f51)
+        ;
+
+        
+    
+    
+            var circle_marker_c27dc970d77aebbc5ef8a9a4783b0bfd = L.circleMarker(
+                [25.6866, -100.3161],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_ea6e6d7a5f62cfeb3eb327c7c8669aeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f415362b9b41ddf881d0319f11fbf04 = $(`<div id="html_4f415362b9b41ddf881d0319f11fbf04" style="width: 100.0%; height: 100.0%;">Monterrey Local: 375 enrollments</div>`)[0];
+                popup_ea6e6d7a5f62cfeb3eb327c7c8669aeb.setContent(html_4f415362b9b41ddf881d0319f11fbf04);
+            
+        
+
+        circle_marker_c27dc970d77aebbc5ef8a9a4783b0bfd.bindPopup(popup_ea6e6d7a5f62cfeb3eb327c7c8669aeb)
+        ;
+
+        
+    
+    
+            var circle_marker_b4331c2c647936dfd4f05a3e430bc301 = L.circleMarker(
+                [19.4326, -99.1332],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_d1bc4757b888e4821d5bc1705e27864a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27942164269ebdd9670e5c1c41afdff2 = $(`<div id="html_27942164269ebdd9670e5c1c41afdff2" style="width: 100.0%; height: 100.0%;">Mexico City Local: 404 enrollments</div>`)[0];
+                popup_d1bc4757b888e4821d5bc1705e27864a.setContent(html_27942164269ebdd9670e5c1c41afdff2);
+            
+        
+
+        circle_marker_b4331c2c647936dfd4f05a3e430bc301.bindPopup(popup_d1bc4757b888e4821d5bc1705e27864a)
+        ;
+
+        
+    
+    
+            var circle_marker_4218e8f117b7e20a4698fe36aaba3a45 = L.circleMarker(
+                [42.3314, -83.0458],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_32f189d7ea5d3b87e7625260950f0e62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd8b5b5f48f27ae7d3104db20c4eb43e = $(`<div id="html_cd8b5b5f48f27ae7d3104db20c4eb43e" style="width: 100.0%; height: 100.0%;">Detroit Local: 364 enrollments</div>`)[0];
+                popup_32f189d7ea5d3b87e7625260950f0e62.setContent(html_cd8b5b5f48f27ae7d3104db20c4eb43e);
+            
+        
+
+        circle_marker_4218e8f117b7e20a4698fe36aaba3a45.bindPopup(popup_32f189d7ea5d3b87e7625260950f0e62)
+        ;
+
+        
+    
+    
+            var circle_marker_46c85408266db249928fa3a5489b0c1b = L.circleMarker(
+                [30.5728, 104.0668],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_4536ad5d4b0dbd548b1b3c96640ec6a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a650f2cb866043914515f783d41789e = $(`<div id="html_1a650f2cb866043914515f783d41789e" style="width: 100.0%; height: 100.0%;">Chengdu Local: 422 enrollments</div>`)[0];
+                popup_4536ad5d4b0dbd548b1b3c96640ec6a9.setContent(html_1a650f2cb866043914515f783d41789e);
+            
+        
+
+        circle_marker_46c85408266db249928fa3a5489b0c1b.bindPopup(popup_4536ad5d4b0dbd548b1b3c96640ec6a9)
+        ;
+
+        
+    
+    
+            var circle_marker_55a98c534911663b7f9ce757c2a27b3b = L.circleMarker(
+                [40.4168, -3.7038],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_bd46ce1cc7173941cc1c86c5328a5905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72d836e5d8e6b877e668ac911250d74b = $(`<div id="html_72d836e5d8e6b877e668ac911250d74b" style="width: 100.0%; height: 100.0%;">Madrid Local: 254 enrollments</div>`)[0];
+                popup_bd46ce1cc7173941cc1c86c5328a5905.setContent(html_72d836e5d8e6b877e668ac911250d74b);
+            
+        
+
+        circle_marker_55a98c534911663b7f9ce757c2a27b3b.bindPopup(popup_bd46ce1cc7173941cc1c86c5328a5905)
+        ;
+
+        
+    
+    
+            var circle_marker_f92611fbbb5a05c1c6a8814555347058 = L.circleMarker(
+                [13.7563, 100.5018],
+                {"bubblingMouseEvents": true, "color": "#78c679", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c679", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_c53c126feead35c07fc2b922c496bec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4db88fd5acda8971fc6827eb8eaabb4 = $(`<div id="html_a4db88fd5acda8971fc6827eb8eaabb4" style="width: 100.0%; height: 100.0%;">Bangkok Local: 491 enrollments</div>`)[0];
+                popup_c53c126feead35c07fc2b922c496bec1.setContent(html_a4db88fd5acda8971fc6827eb8eaabb4);
+            
+        
+
+        circle_marker_f92611fbbb5a05c1c6a8814555347058.bindPopup(popup_c53c126feead35c07fc2b922c496bec1)
+        ;
+
+        
+    
+    
+            var circle_marker_1a546d3fb7515f5f031162b4c49261d0 = L.circleMarker(
+                [29.7604, -95.3698],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_2965c5d2bbe1e7ebd806af3a26987f8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09ffe393906245a3c6c354d1ae73f1ee = $(`<div id="html_09ffe393906245a3c6c354d1ae73f1ee" style="width: 100.0%; height: 100.0%;">Houston Local: 436 enrollments</div>`)[0];
+                popup_2965c5d2bbe1e7ebd806af3a26987f8a.setContent(html_09ffe393906245a3c6c354d1ae73f1ee);
+            
+        
+
+        circle_marker_1a546d3fb7515f5f031162b4c49261d0.bindPopup(popup_2965c5d2bbe1e7ebd806af3a26987f8a)
+        ;
+
+        
+    
+    
+            var circle_marker_fb075d5b2790301144984c1862045ba8 = L.circleMarker(
+                [25.7617, -80.1918],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_66560e4fabac6755e982a0ebb4b26d4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae9718413dfc7b8561685a596b69af31 = $(`<div id="html_ae9718413dfc7b8561685a596b69af31" style="width: 100.0%; height: 100.0%;">Miami Local: 380 enrollments</div>`)[0];
+                popup_66560e4fabac6755e982a0ebb4b26d4b.setContent(html_ae9718413dfc7b8561685a596b69af31);
+            
+        
+
+        circle_marker_fb075d5b2790301144984c1862045ba8.bindPopup(popup_66560e4fabac6755e982a0ebb4b26d4b)
+        ;
+
+        
+    
+    
+            var circle_marker_ae5c4f2a7ece6c90354b1a1c4491b480 = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_3feaa9fd1dad8136a213eba49aaa83a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c7f3db28ebca9f27cee7b2e675254b3 = $(`<div id="html_5c7f3db28ebca9f27cee7b2e675254b3" style="width: 100.0%; height: 100.0%;">New York Local: 361 enrollments</div>`)[0];
+                popup_3feaa9fd1dad8136a213eba49aaa83a5.setContent(html_5c7f3db28ebca9f27cee7b2e675254b3);
+            
+        
+
+        circle_marker_ae5c4f2a7ece6c90354b1a1c4491b480.bindPopup(popup_3feaa9fd1dad8136a213eba49aaa83a5)
+        ;
+
+        
+    
+    
+            var circle_marker_c6e19f572f8afde6d76c7dfb4ef1497d = L.circleMarker(
+                [-33.4489, -70.6693],
+                {"bubblingMouseEvents": true, "color": "#78c679", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c679", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_e8516fc32d1c6c638516300b36b4a1df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ea93c867a2eed8b2aae8fc52c9e9012 = $(`<div id="html_5ea93c867a2eed8b2aae8fc52c9e9012" style="width: 100.0%; height: 100.0%;">Santiago Local: 505 enrollments</div>`)[0];
+                popup_e8516fc32d1c6c638516300b36b4a1df.setContent(html_5ea93c867a2eed8b2aae8fc52c9e9012);
+            
+        
+
+        circle_marker_c6e19f572f8afde6d76c7dfb4ef1497d.bindPopup(popup_e8516fc32d1c6c638516300b36b4a1df)
+        ;
+
+        
+    
+    
+            var circle_marker_43ea32746f619fe99cefa2a16b5815ff = L.circleMarker(
+                [45.4642, 9.19],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_aecefdc7055aee73c1d98c08355e698a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cccbdde370789c374aca2be3f1aa2180 = $(`<div id="html_cccbdde370789c374aca2be3f1aa2180" style="width: 100.0%; height: 100.0%;">Milan Local: 257 enrollments</div>`)[0];
+                popup_aecefdc7055aee73c1d98c08355e698a.setContent(html_cccbdde370789c374aca2be3f1aa2180);
+            
+        
+
+        circle_marker_43ea32746f619fe99cefa2a16b5815ff.bindPopup(popup_aecefdc7055aee73c1d98c08355e698a)
+        ;
+
+        
+    
+    
+            var circle_marker_718c9ad35039747a47faedd3c9b976d0 = L.circleMarker(
+                [47.3769, 8.5417],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_d3fb62e13eb68ed5b68a9c47cbfe3441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf49827cc56dc16ab48e5689684331cd = $(`<div id="html_cf49827cc56dc16ab48e5689684331cd" style="width: 100.0%; height: 100.0%;">Zurich Local: 390 enrollments</div>`)[0];
+                popup_d3fb62e13eb68ed5b68a9c47cbfe3441.setContent(html_cf49827cc56dc16ab48e5689684331cd);
+            
+        
+
+        circle_marker_718c9ad35039747a47faedd3c9b976d0.bindPopup(popup_d3fb62e13eb68ed5b68a9c47cbfe3441)
+        ;
+
+        
+    
+    
+            var circle_marker_032c3f6f0b2c063b437119ac9e8d39a1 = L.circleMarker(
+                [10.4806, -66.9036],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_c893b7e49a8315c82fe6798e874ff5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ede3f0601beaf0026916faf931565eec = $(`<div id="html_ede3f0601beaf0026916faf931565eec" style="width: 100.0%; height: 100.0%;">Caracas Local: 347 enrollments</div>`)[0];
+                popup_c893b7e49a8315c82fe6798e874ff5a3.setContent(html_ede3f0601beaf0026916faf931565eec);
+            
+        
+
+        circle_marker_032c3f6f0b2c063b437119ac9e8d39a1.bindPopup(popup_c893b7e49a8315c82fe6798e874ff5a3)
+        ;
+
+        
+    
+    
+            var circle_marker_4d494b7e3d0c10005c91bf937ba9aaf3 = L.circleMarker(
+                [8.9824, -79.5199],
+                {"bubblingMouseEvents": true, "color": "#31a354", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_d24c7030cb6701e3ab2508b2b398b4cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_400889557f1a3d9f6b696eeba9ca2dc5 = $(`<div id="html_400889557f1a3d9f6b696eeba9ca2dc5" style="width: 100.0%; height: 100.0%;">Panama City Local: 670 enrollments</div>`)[0];
+                popup_d24c7030cb6701e3ab2508b2b398b4cc.setContent(html_400889557f1a3d9f6b696eeba9ca2dc5);
+            
+        
+
+        circle_marker_4d494b7e3d0c10005c91bf937ba9aaf3.bindPopup(popup_d24c7030cb6701e3ab2508b2b398b4cc)
+        ;
+
+        
+    
+    
+            var circle_marker_fc49ef2d84c6c8f693380aaae314f968 = L.circleMarker(
+                [48.8566, 2.3522],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_ed13e48e96ea7d60daa6818e1b6aa812 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ded3619fa10a1efb5600ef1dc6409844 = $(`<div id="html_ded3619fa10a1efb5600ef1dc6409844" style="width: 100.0%; height: 100.0%;">Paris Local: 385 enrollments</div>`)[0];
+                popup_ed13e48e96ea7d60daa6818e1b6aa812.setContent(html_ded3619fa10a1efb5600ef1dc6409844);
+            
+        
+
+        circle_marker_fc49ef2d84c6c8f693380aaae314f968.bindPopup(popup_ed13e48e96ea7d60daa6818e1b6aa812)
+        ;
+
+        
+    
+    
+            var circle_marker_689a10269f2b177b91b76d72c0c6fee5 = L.circleMarker(
+                [47.6062, -122.3321],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_ab4890f03ef38fbd0870534f0bb2120a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2846ecc294997fff8b30904986cb5965 = $(`<div id="html_2846ecc294997fff8b30904986cb5965" style="width: 100.0%; height: 100.0%;">Seattle Local: 431 enrollments</div>`)[0];
+                popup_ab4890f03ef38fbd0870534f0bb2120a.setContent(html_2846ecc294997fff8b30904986cb5965);
+            
+        
+
+        circle_marker_689a10269f2b177b91b76d72c0c6fee5.bindPopup(popup_ab4890f03ef38fbd0870534f0bb2120a)
+        ;
+
+        
+    
+    
+            var circle_marker_5dba0c58538f84039215195f086954b7 = L.circleMarker(
+                [36.1627, -86.7816],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_47530ea2eedba15ab68beae429198709 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a59b4ab8da34a62541fd9b85fe706e97 = $(`<div id="html_a59b4ab8da34a62541fd9b85fe706e97" style="width: 100.0%; height: 100.0%;">Nashville Local: 233 enrollments</div>`)[0];
+                popup_47530ea2eedba15ab68beae429198709.setContent(html_a59b4ab8da34a62541fd9b85fe706e97);
+            
+        
+
+        circle_marker_5dba0c58538f84039215195f086954b7.bindPopup(popup_47530ea2eedba15ab68beae429198709)
+        ;
+
+        
+    
+    
+            var circle_marker_458ce2e6e825d058b2e95424caa65719 = L.circleMarker(
+                [31.2304, 121.4737],
+                {"bubblingMouseEvents": true, "color": "#31a354", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_0222dfd471e643bf27cdc6b55f737b9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ee5720848afd6015cbfb8c168ca8468 = $(`<div id="html_5ee5720848afd6015cbfb8c168ca8468" style="width: 100.0%; height: 100.0%;">Shanghai Local: 685 enrollments</div>`)[0];
+                popup_0222dfd471e643bf27cdc6b55f737b9a.setContent(html_5ee5720848afd6015cbfb8c168ca8468);
+            
+        
+
+        circle_marker_458ce2e6e825d058b2e95424caa65719.bindPopup(popup_0222dfd471e643bf27cdc6b55f737b9a)
+        ;
+
+        
+    
+    
+            var circle_marker_0a4031d209756e3555ecc17ec0ac286c = L.circleMarker(
+                [53.3498, -6.2603],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_0ee1bd58d63d3f49921d8e2fc2953034 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1498a3e174e5f65a6172b2016cbd70c1 = $(`<div id="html_1498a3e174e5f65a6172b2016cbd70c1" style="width: 100.0%; height: 100.0%;">Dublin Local: 232 enrollments</div>`)[0];
+                popup_0ee1bd58d63d3f49921d8e2fc2953034.setContent(html_1498a3e174e5f65a6172b2016cbd70c1);
+            
+        
+
+        circle_marker_0a4031d209756e3555ecc17ec0ac286c.bindPopup(popup_0ee1bd58d63d3f49921d8e2fc2953034)
+        ;
+
+        
+    
+    
+            var circle_marker_c8cba8ae4f2940e8af8f30ef2be0e938 = L.circleMarker(
+                [39.2904, -76.6122],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_47299edffd942423b84d6a689af16310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afea0c9e7a29f8cbe22567ca623ccb1e = $(`<div id="html_afea0c9e7a29f8cbe22567ca623ccb1e" style="width: 100.0%; height: 100.0%;">Baltimore Local: 261 enrollments</div>`)[0];
+                popup_47299edffd942423b84d6a689af16310.setContent(html_afea0c9e7a29f8cbe22567ca623ccb1e);
+            
+        
+
+        circle_marker_c8cba8ae4f2940e8af8f30ef2be0e938.bindPopup(popup_47299edffd942423b84d6a689af16310)
+        ;
+
+        
+    
+    
+            var circle_marker_fded499cd250b700ec685338af5a31c2 = L.circleMarker(
+                [48.2082, 16.3738],
+                {"bubblingMouseEvents": true, "color": "#c2e699", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2e699", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8cb85dc8f84b717923e19ed7c887b5de);
+        
+    
+        var popup_c8894128f3645c263e719053c4bbcfcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09fa5e312793ffcb6630bd95ddcd7a9d = $(`<div id="html_09fa5e312793ffcb6630bd95ddcd7a9d" style="width: 100.0%; height: 100.0%;">Vienna Local: 361 enrollments</div>`)[0];
+                popup_c8894128f3645c263e719053c4bbcfcb.setContent(html_09fa5e312793ffcb6630bd95ddcd7a9d);
+            
+        
+
+        circle_marker_fded499cd250b700ec685338af5a31c2.bindPopup(popup_c8894128f3645c263e719053c4bbcfcb)
+        ;
+
+        
+    
+</script>
+</html>
