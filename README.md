@@ -17,7 +17,9 @@ NLS, a global logistics firm, is committed to strengthening its Employee Develop
 3. **Case 3 – Employee Motivation & Segmentation**  
    Analyzes survey data from 600+ employees using **Principal Component Analysis (PCA)** and **K-means clustering**. Four motivational segments emerge: *Career Climbers, Knowledge Seekers, Network Builders,* and *Skill Enhancers*. The segmentation also reveals regional differences in motivational drivers.  
 
-![Employee Engagement Dashboard](Employee_Engagement_Dashboard.png)
+<p align="center">
+  <img src="Employee_Engagement_Dashboard.png" alt="Employee Engagement Dashboard" width="600"/>
+</p>
 
 4. **Case 4 – Targeted Flyers with Generative AI**  
    Translates analytical insights into practice by creating personalized promotional flyers tailored to each employee segment. A **Custom GPT** model is used to generate draft messaging, supported by an executive reflection on AI’s effectiveness in professional communication.  
